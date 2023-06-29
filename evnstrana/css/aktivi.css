@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.naslov h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  position: relative;
+  color: #fdc735;
+  text-align: center;
+}
+.naslov h2::before
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #865c08;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.naslov h2::after
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #fdc735;
+  bottom: 0.5px;
+  left: calc(50% - 20px);
+}
+::after,::before
+{
+  box-sizing: border-box;
+}
+.aktivi
+{
+  background-color: #f3f5fa;
+  min-height: 100vh;
+  padding: 70px 15px 30px;
+}
+.container-aktivi
+{
+  max-width: 1350px;
+  margin: auto;
+  padding-top: 50px;
+}
+.row-aktivi
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.aktivi .team-items
+{
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.aktivi .team-items .item
+{
+  flex-basis: calc(30% - 30px);
+  max-width: calc(30% - 30px);
+  transition: all 0.5s ease;
+  margin-bottom: 40px;
+}
+.aktivi .team-items .item img
+{
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+.aktivi .team-items .item .inner
+{
+  position: relative;
+  z-index: 11;
+  padding: 0 15px;
+}
+.aktivi .team-items .item .inner .info
+{
+  background-color: #fdc735;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  margin-top: -40px;
+}
+.aktivi .team-items .item:hover .info
+{
+  transform: translateY(-20px);
+}
+.aktivi .team-items .item:hover
+{
+  transform: translateY(-10px);
+}
+.aktivi .team-items .item .inner .info h5
+{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444444;
+}
+
+@media(max-width:991px)
+{
+  .aktivi .team-items .item
+  {
+    flex-basis: calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+@media(max-width:767px)
+{
+  .aktivi .team-items .item
+  {
+    flex-basis: calc(100%);
+    max-width: calc(100%);
+  }
+}

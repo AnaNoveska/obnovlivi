@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    
+}
+h1{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size:50px;
+}
+.sonceva{
+  width: 1400px;
+  height: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+}
+h2{
+  font-size: 30px;
+}
+.solarnaimg{
+  padding-top: 30px;
+  width: 550px;
+  height: 450px;
+}
